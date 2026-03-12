@@ -42,6 +42,6 @@ async function getStadiums(stadium) {
     <Button @click="handleClickStadiums">Click to get stadium</Button>
   </header>
   <main>
-    <stadium-error v-if="errorData"></stadium-error>
+    <stadium-error v-if="errorData" :message="errorData.message"></stadium-error>
   </main>
 </template>
